@@ -44,22 +44,41 @@
                     <h2 id="html-questions">HTML Questions</h2>
                         <div class="question-block">
                             <p>1</p>
-                            <fieldset class="question">
-                                <legend></legend>
-                                <ul>
-                                    <li></li>
-                                    <li></li>
+                            <fieldset class="question" name="questions1">
+                                <legend>The legend element represents a caption for the content of its parent fieldset element</legend>
+                                <ul class="answers-list">
+                                    <li>
+                                        <label for="q1-a1"> <!--Giving the inputs the same name value makes it so that only one can be selected at a time-->
+                                            <input name="q1" type="radio" id="q1-a1" value="True">True
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <label for="q1-a2">
+                                            <input name="q1" type="radio" id="q1-a2" value="False">False
+                                        </label>
+                                    </li>
                                 </ul>
                             </fieldset>
                         </div>
 
                         <div class="question-block">
                             <p>2</p>
-                            <fieldset class="question">
-                                <legend></legend>
-                                <ul>
-                                    <li></li>
-                                    <li></li>
+                            <fieldset class="question" name="questions2">
+                                <legend>A label element nesting an input element is required to have a for attribute with the same value as the input's id</legend>
+                                <ul class="answers-list">
+                                    <li>
+                                        <label for="q2-a1">
+                                            <input name="q2" type="radio" id="q2-a1" value="True">True
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <label for="q2-a2">
+                                            <input name="q2" type="radio" id="q2-a2" value="False">False
+                                        </label>
+                                    </li>
+
                                 </ul>
                             </fieldset>
                         </div>
@@ -68,6 +87,12 @@
 
                 <section aria-labelledby="css-questions" role="region">
                     <h2 id="css-questions">CSS Questions</h2>
+                        <div class="formrow">
+                            <div class="question-block"></div>
+                            <div class="answer"></div>
+                            <div class="question-block"></div>
+                            <div class="answer"></div>
+                        </div>
                 </section>
             </form>
             
