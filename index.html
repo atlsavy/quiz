@@ -88,14 +88,41 @@
                 <section aria-labelledby="css-questions" role="region">
                     <h2 id="css-questions">CSS Questions</h2>
                         <div class="formrow">
-                            <div class="question-block"></div>
-                            <div class="answer"></div>
-                            <div class="question-block"></div>
-                            <div class="answer"></div>
+                            <div class="question-block">
+                                <label for="a1">Are you a frontend developer?</label>
+                            </div>
+
+                            <div class="answer">
+                                <select id="a1" name="a1" required>
+                                    <option value="">Select an option</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+
+                            <div class="question-block">
+                                <label for="a2">Do you have any questions:</label>
+                            </div>
+
+                            <div class="answer">
+                                <textarea id="a2" name="a2" rows="3" cols="23" placeholder="How do you do this all day?"></textarea>
+                            </div>
                         </div>
                 </section>
+                    <button id="submit" type="submit">Send</button>
             </form>
-            
         </main>
+                             <!--Main contents are complete-->
+
+        <footer>            
+            <address>
+                <!--The br tags will allow each part of the address to be on its own line and are useful for presenting address elements properly.-->
+                freeCodeCamp<br />
+                San Francisco<br />
+                California<br />
+                USA
+            </address>
+        </footer>
+        <!--The footer element is a container for a collection of content that is related to the page, and the address element is a container for contact information for the author of the page.-->
     </body>
 </html>
