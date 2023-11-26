@@ -31,7 +31,7 @@ nav {
 }
 
 /* > is used between selectors to target only elements that match the second selector and are a direct child of the first selector.*/
-nav>ul {
+nav > ul {
     justify-content: space-evenly;
     display: flex;
 }
@@ -40,11 +40,11 @@ h1, h2 {
     font-family: Verdana, sans-serif;
 }
   
-  h2 {
+h2 {
     border-bottom: 4px solid #dfdfe2
 }
 
-.sr-only { /* This is a common pattern to visually hide text      for only screen readers to read*/
+.sr-only { /* This is a common pattern to visually hide text for only screen readers to read*/
     position: absolute;   
     width: 1px;         
     height: 1px;
@@ -59,9 +59,26 @@ h1, h2 {
 p::before {
     content: "Question #";
 }
-  
+
+nav li {
+    color: #dfdfe2;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+}
+
+li > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: #dfdfe2;
+    color: #1b1b32;
+    cursor: pointer;
+}
   
   /*This is my own margin for now*/
-  main {
+  main, footer{
     margin: 2rem;
   }
